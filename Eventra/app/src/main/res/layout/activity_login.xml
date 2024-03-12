@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ============================= -->
+<!-- Shanuka Dilshan - IM/2020/017 -->
+<!-- ============================= -->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8EAFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:layout_width="31dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:src="@drawable/mobile_app_logo_transparent" />
+
+            <TextView
+                android:id="@+id/txtUOKEvents"
+                android:layout_width="121dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10px"
+                android:paddingTop="5dp"
+                android:paddingRight="4dp"
+                android:text="UOK\nEvents"
+                android:textAlignment="textStart"
+                android:textColor="#064884"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgRefresh"
+                android:layout_width="46dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:src="@drawable/refresh" />
+
+            <ImageView
+                android:id="@+id/imgMenu"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:src="@drawable/menu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#004280"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.091">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="146dp"
+                android:padding="5dp"
+                android:text="Log in"
+                android:textColor="#F5F5FF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="294dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="325dp"
+                    android:src="@drawable/mobile_app_logo_transparent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="Username"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/usernameInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/edittext_with_border"
+                    android:hint="Username"
+                    android:padding="7dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:text="Password"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/passwordInput"
+                    android:layout_width="match_parent"
+                    android:inputType="textPassword"
+                    android:layout_height="48dp"
+                    android:background="@drawable/edittext_with_border"
+                    android:hint="Password"
+                    android:padding="7dp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="50dp"
+                android:backgroundTint="#004280"
+                android:text="Log in"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/errorMessege"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="35dp"
+                android:textColor="#FF0000"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.676" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

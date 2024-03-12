@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- ============================= -->
+<!-- Nethma Kithmini - IM/2020/111 -->
+<!-- ============================= -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8EAFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="48dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/mobile_app_logo_transparent" />
+
+            <TextView
+                android:id="@+id/txtUOKEvents"
+                android:layout_width="121dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="10px"
+                android:paddingTop="5dp"
+                android:text="UOK\nEvents"
+                android:textColor="#064884"
+                android:textAlignment="textStart"
+                android:paddingRight="4dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgRefresh"
+                android:layout_width="46dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:src="@drawable/refresh" />
+
+            <ImageView
+                android:id="@+id/imgMenu"
+                android:layout_width="85dp"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:src="@drawable/menu" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#004280">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:padding="5dp"
+                android:text="Admin - Form"
+                android:textColor="#F5F5FF"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Event Title"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/txtEventTitle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/edittext_with_border"
+                android:hint="Fasionista 2.0"
+                android:padding="7dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Event Description"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/txtEventDescription"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/edittext_with_border"
+                android:hint="Fasionista, is the first ever event.."
+                android:padding="7dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Date and Time"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/txtDateAndTime"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/edittext_with_border"
+                android:hint="2023-10-21 19:00:00"
+                android:padding="7dp"
+                android:focusable="false"
+                android:drawableRight="@drawable/calendar_month_24"
+                android:clickable="true"
+                android:inputType="none"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Venue"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/txtVenue"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/edittext_with_border"
+                android:hint="Dharmaloka Hall | UOK"
+                android:padding="7dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15sp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Ticket Price"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/txtTicketPrize"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/edittext_with_border"
+                android:hint="1000 LKR"
+                android:padding="7dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Organized By"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/txtOrganizedBy"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/edittext_with_border"
+                android:hint="AIESEC in UOK"
+                android:padding="7dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/warningEvent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24dp"
+                android:textAlignment="center"
+                android:textColor="#FF0000"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btnAddEvent"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#004280"
+                android:onClick="addEvent"
+                android:text="Add Event"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnClearEventForm"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="28dp"
+                android:text="Clear Form"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:backgroundTint="#004280"/>
+
+        </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>
